@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "Auto Send WhatsApp Message",
+  "version": "1.0",
+  "description": "Automatically clicks the Send button on WhatsApp Web.",
+  "permissions": ["scripting", "activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["https://web.whatsapp.com/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
